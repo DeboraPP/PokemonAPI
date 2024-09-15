@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Pokémon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Buscar Pokémon</h1>
+    
+    <input type="text" id="pokemon" placeholder="Digite o nome ou ID do Pokémon">
+    <button onclick="buscarPokemon()">Buscar</button>
+    
+    <div class="pokemon-container" id="pokemonContainer">
+        <h2 id="pokemonName">Nome do Pokémon</h2>
+        <img id="pokemonImage" src="" alt="Imagem do Pokémon">
+        <p>Tipo: <span id="pokemonType">Tipo</span></p>
+    </div>
+    
+    <div class="buttons">
+        <button onclick="previousPokemon()">Anterior</button>
+        <button onclick="nextPokemon()">Próximo</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
